@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>your own hero</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="fabric.js"></script>
+        <body>
+            <h1 id="h1">Make your own hero</h1> <br><br><br>   
+            <section id="faces">
+                <h1>Select your face</h1><h2>(you can select only once)</h2>
+                <img id="spider_face" onclick="spiderface()" src="spiderman_face.png">
+                <img id="thor_face" onclick="thorface()" src="thor_face.png">
+                <img id="iron_face" onclick="ironface()" src="ironman_face.png">
+            </section>
+
+            <section id="bodies">
+                <h1>Select your body</h1><h2>(you can select only once)</h2>
+                <img id="hulk_body" onclick="hulkbody()" src="hulk_body.png">
+                <img id="iron_body" onclick="ironbody()" src="ironman_body.png">
+                <img id="spider_body" onclick="spiderbody()" src="spiderman_body.png">
+            </section>
+
+            <section id="legs">
+                <h1>Select your legs</h1><h2>(you can select only once)</h2>
+                <img id="spider_legs" onclick="spiderlegs()" src="spiderman_legs.png">
+                <img id="hulk_legs" onclick="hulklegs()" src="hulk_legs.png">
+                <img id="iron_legs" onclick="ironlegs()" src="ironman_legs.png">
+            </section>
+
+            <section id="right_hands">
+                <h1>Select your right hand</h1><h2>(you can select only once)</h2>
+                <img id="iron_right_hand" onclick="iron_rh()" src="ironman_right_hand.png">
+                <img id="thor_right_hand" onclick="thor_rh()" src="thor_right_hand.png">
+                <img id="spider_right_hand" onclick="spider_rh()" src="spiderman_right_hand.png">
+            </section>
+
+            <section id="left_hands">
+                <h1>Select your left hand</h1><h2>(you can select only once)</h2>
+                <img id="spider_left_hand" onclick="spider_lh()" src="spiderman_left_hand.png">
+                <img id="iron_left_hand" onclick="iron_lh()" src="ironman_left_hand.png">
+                <img id="thor_left_hand" onclick="thor_lh()" src="thor_left_hand.png">
+            </section>
+           
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Next</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Rules</h4>
+        </div>
+        <div class="modal-body">
+          <p>Now you can finally create your superhero! click on- 'f' to get your face, 'b' to get your body, 'l' to get your legs, 'r' to get your right hand and 'h' to get your left hand. you can click on shift and p to make your block bigger and click on shift and m to make your block smaller</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div><br><br><br>
+<center>
+<div id="head_info" class="btn-danger">
+  <h3>Current Width  = <span id="current_width">30</span></h3>
+  <h3>Current Height  = <span id="current_height">30</span></h3>
+</div>
+            <canvas id="myCanvas" width="800" height="500"></canvas>
+          </center>
+        </body>
+        <script src="main.js"></script>
+    </head>
+</html>

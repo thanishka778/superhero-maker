@@ -1,0 +1,139 @@
+body{
+    background-image: url("avenger_bg.jpg");
+    text-align: center;
+
+}
+
+#h1{
+    color: white;
+}
+
+#faces{
+    background-color: rgb(245, 209, 94);
+}
+
+#spider_face{
+    width:250px;
+    height:250px;
+}
+
+#thor_face{
+    width:250px;
+    height:250px;
+}
+
+#iron_face{
+    width:250px;
+    height:250px;
+}
+
+#bodies{
+    background-color: rgb(245, 209, 94);
+}
+
+#spider_body{
+    width:250px;
+    height:250px;
+}
+
+#hulk_body{
+    width:250px;
+    height:250px;
+}
+
+#iron_body{
+    width:250px;
+    height:250px;
+}
+
+#legs{
+    background-color: rgb(245, 209, 94);
+}
+
+#spider_legs{
+    width:250px;
+    height:250px;
+}
+
+#hulk_legs{
+    width:250px;
+    height:250px;
+}
+
+#iron_legs{
+    width:250px;
+    height:250px;
+}
+
+#right_hands{
+    background-color: rgb(245, 209, 94);
+}
+
+#spider_right_hand{
+    width:250px;
+    height:250px;
+}
+
+#thor_right_hand{
+    width:250px;
+    height:250px;
+}
+
+#iron_right_hand{
+    width:250px;
+    height:250px;
+}
+
+#left_hands{
+    background-color: rgb(245, 209, 94);
+}
+
+#spider_left_hand{
+    width:250px;
+    height:250px;
+}
+
+#thor_left_hand{
+    width:250px;
+    height:250px;
+}
+
+#iron_left_hand{
+    width:250px;
+    height:250px;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #d87ddb}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #myCanvas
+{
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge;
+}
+
+#head_info
+{
+	width: 600px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
