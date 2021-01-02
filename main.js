@@ -129,7 +129,7 @@ function new_image(get_image){
 }
 
 window.addEventListener("keydown", my_keydown);
- function my_keydown(){
+ function my_keydown(e){
     key_pressed=e.keyCode;
     console.log(key_pressed);
 
@@ -195,3 +195,42 @@ window.addEventListener("keydown", my_keydown);
     }
  }
 
+ function up(){
+    if(player_y>0){
+        player_y=player_y-block_img_height;
+        console.log("block image height="+block_img_height);
+        console.log("when up arrow is pressed x=" + player_x + "y=" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function down(){
+    if(player_y<=350){
+        player_y=player_y+block_img_height;
+        console.log("block image height="+block_img_height);
+        console.log("when down arrow is pressed x=" + player_x + "y=" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function left(){
+    if(player_x>=0){
+        player_x=player_x-block_img_width;
+        console.log("block image width="+block_img_width);
+        console.log("when left arrow is pressed x=" + player_x + "y=" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function right(){
+    if(player_x<=650){
+        player_x=player_x+block_img_width;
+        console.log("block image width="+block_img_width);
+        console.log("when right arrow is pressed x=" + player_x + "y=" + player_y);
+        canvas.remove(player_object);
+        player_update();
+    }
+}
